@@ -214,7 +214,7 @@ const LoginPage: React.FC = () => {
         )}
 
         {/* Fallback button for manual trigger */}
-        <button
+        {/* <button
           onClick={signInWithGoogle}
           disabled={loading || !isGoogleLoaded}
           className="mt-4 w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
@@ -230,7 +230,7 @@ const LoginPage: React.FC = () => {
               Manual Sign In
             </>
           )}
-        </button>
+        </button> */}
 
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-4">
