@@ -64,7 +64,7 @@ const WalletDashboard: React.FC = () => {
     // Clear user data and navigate to login
     localStorage.removeItem('user');
     localStorage.removeItem('google_access_token');
-    navigate(`${import.meta.env.VITE_REACT_APP_REDIRECT_URL}/login`);
+    navigate('/login');
   };
 
   const cancelSignOut = () => {

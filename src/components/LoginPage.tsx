@@ -20,7 +20,7 @@ const LoginPage: React.FC = () => {
       
       // Use window.location to avoid React Router conflicts
       setTimeout(() => {
-        window.location.href = `${import.meta.env.VITE_REACT_APP_REDIRECT_URL}/dashboard`;
+        window.location.href = '/dashboard';
       }, 100);
     }
   }, [user, walletCreationTimeout]);
@@ -194,7 +194,7 @@ const LoginPage: React.FC = () => {
             <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <Zap className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome to Smart Wallet<br/> (Powered by ZeroDev)</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome to ZeroDev Smart Wallet</h1>
             <p className="text-gray-600">Sign in with Google to create your gasless smart wallet</p>
           </div>
 
@@ -214,7 +214,7 @@ const LoginPage: React.FC = () => {
         )}
 
         {/* Fallback button for manual trigger */}
-        {/* <button
+        <button
           onClick={signInWithGoogle}
           disabled={loading || !isGoogleLoaded}
           className="mt-4 w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
@@ -230,7 +230,7 @@ const LoginPage: React.FC = () => {
               Manual Sign In
             </>
           )}
-        </button> */}
+        </button>
 
         <div className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-4">
